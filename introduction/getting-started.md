@@ -89,7 +89,7 @@ Finally, let's configure the WiFi connection, so that:
 
 
 ::: info
-Note that in this first guide, we don't configure nor use the SSH keys. In very simple settings that could be OK, but it is probable that you will very soon find such functionality rather convenient. See [@todo]() for further information on that point.
+Note that in this first guide, we don't configure nor use the SSH keys. In very simple settings that could be OK, but it is probable that you will very soon find such functionality rather convenient. See [@todo](../index.md) for further information on that point.
 :::
 
 ## Preparing the SD Card
