@@ -48,9 +48,6 @@ dotpi_ssh_allow_password_authentication='yes'
 # no default password:
 # - keep the one set by the imager
 # - or override in secrets/dotpi_secrets.bash
-dotpi_password_hash6=
-# # openssl passwd -6
-# dotpi_password_hash6='$6$...'
 
 dotpi_timezone='Europe/Paris'
 dotpi_keymap='fr'
@@ -68,7 +65,7 @@ dotpi_node_version='lts'
 
 Now that some general information about our project are defined, let's configure some secrets of the project. 
 
-### Changing password
+### Change the password
 
 First let's change the password of the RPi. Open the `getting-started/secrets/dotpi-secrets.bash` bash file and change the password to anything that suits you:
 
@@ -80,28 +77,99 @@ dotpi_password='!raspberry' # [!code --]
 dotpi_password='yoursuperpasssword'  # [!code ++]
 ```
 
-### Configuring WiFi
+::: info
+Note that in this first guide, we don't configure nor use any SSH keys. In very simple settings that could be OK, but it is likely that you will soon find such functionality convenient. See [@todo](../index.md) for further information on that point.
+:::
+
+### Wi-Fi configuration
 
 Finally, let's configure the WiFi connection, so that:
 - You will be able to access the RPi through SSH or something
 - The RPi will be able to connect to the Internet to install itself in the next step
 
+Open the `getting-started/network/wifi-local.nmconnection` file and change the following lines to put the information from you WiFi connection:
 
+```txt {10,14}
+[connection]
+id=wifi-internet
+type=wifi
+interface-name=wlan0
+autoconnect=false
+autoconnect-priority=-10
 
-::: info
-Note that in this first guide, we don't configure nor use the SSH keys. In very simple settings that could be OK, but it is probable that you will very soon find such functionality rather convenient. See [@todo](../index.md) for further information on that point.
-:::
+[wifi]
+mode=infrastructure
+ssid=YourBoxSSID
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk=ThePassword
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=default
+method=link-local
+
+[proxy]
+```
+
+Now that we have configured all the most important points, let's prepare our SD Card.
 
 ## Preparing the SD Card
 
+To prepare the system image, we will simply use the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) provided by the Raspberry Pi foundation. 
+
+1. Insert a SD Card into your computer
+2. Launch the Raspberry Pi Imager
+3. Select the Raspberry Pi target
+4. Select the operating system, e.g. Raspberry Pi OS Lite
+
+You can now click on the "NEXT" button
+
+![rpi-image-1](../assets/introduction/getting-started/rpi-imager-1.png)
+On the next screen, select "NO" to not apply any customization setting, these settings will be applied from your project configuration file by the _dotpi install_
+
+![rpi-image-2](../assets/introduction/getting-started/rpi-imager-2.png)
+Finally, click on "YES" to start the installation of the system on the SD Card
+
+![rpi-image-3](../assets/introduction/getting-started/rpi-imager-3.png)
+By default, the Imager will automatically eject the SD Card when the installation terminates. So let's just re-plug the SC Card so that we can apply the _dotpi_ configuration on the SD Card.
+
+Once re-plugged into your computer, you should see a volume called `fsboot` mounted in the "Finder"
+
+![finder-fsboot](../assets/introduction/getting-started/finder-fsboot.png)
 
 
-- install Raspberry Pi OS
-- install the project configuration and _dotpi_ tools on the SD Card
+Let then go back into your "Terminal" on launch the following command to finalize the preparation of the SD Card with your _dotpi_ project configuration:
+
+```sh
+# go into the dotpi-install directory
+cd path/to/dotpi-install
+# launch the command that will finalize the preparation of your SD Card
+# giving the path to the project configuration
+./dotpi_root/bin/dotpi_prepare_sd_card --project projects/getting-started/
+```
+
+The tool will ask you for an instance number, just put "1" for example.
+
+![dotpi-install-instance](../assets/introduction/getting-started/dotpi-install-instance.png)
+
+As you can see this number will be used to define the `hostname` of your RPi, which will stand to be really useful when you will have multiple of them running.
 
 ## Booting the Raspberry Pi
 
-command to check the 
+Now that the SD Card is fully prepared, you can just plug it in your Raspberry Pi and power it on.
+
+If you'd like to monitor the installation of the system, you can just run the command that the tool proposed you on the last line:
+
+```
+INFO: You can monitor the preparation of the system with the following command
+INFO: (You will have to wait until the network is ready.)
+INFO:
+INFO: ssh pi@dotpi-getting-started-001.local 'tail -f /opt/dotpi/var/log/dotpi_prepare_system_*.log'
+```
 
 ## Using the `dotpi-manager`
 

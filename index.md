@@ -4,28 +4,28 @@ layout: doc
 
 # dotpi | documentation
 
+The _dotpi_ ecosystem aims at facilitating the creation and maintenance of a fleet of Raspberry Pi nano-computers to run distributed audio applications.
 
-The _dotpi_ ecosystem allows a fleet of Raspberry Pi computers to run distributed applications. There is a focus on audio capabilities with helpers for sound devices.
-
+![dots-espro](./assets/homepage/dots-espro.jpg)
 
 ## Features
 
-_dotpi_ is set of tools that runs on a server and on each Raspberry Pi, to organise the ensemble.
+The set of tools provided _dotpi_ run both on a server and on each Raspberry Pi. In short, _dotpi_ provides:
 
-- configure and install ex. sound card, network
-- service: ex. ensure that jackd service always run
-- command line tools: ex. install and remove a service
-- manager: deploy, run and monitor your project on a fleet of pi
-
-
+- A way configure and install the system on the Raspberry Pi, e.g. sound card, network
+- Some service and daemons, e.g. ensure that jackd service always run
+- Some command line tools, e.g. to install and remove a service
+- A manager to deploy, run and monitor your projects on a fleet of pi
 
 ## Requirements
 
-- MacOS. It is tested with MacOS. Pull request are welcome for other systems. (The server must be able to run `bash` and `perl` scripts.)
-- RPi 3 or 4. Let us know if it runs on a Raspberry 5.
+- MacOS. Pull request are welcome for other systems (note that the server must be able to run `bash` and `perl` scripts.)
+- RPi 3 or 4 (should work on a Raspberry 5 but has not been tested yet, any feedback welcome).
 
 ## Raspberry Pi computers
 
-_dotpi_ runs on Rapsberry Pi models 3 and 4, with `Raspberry Pi OS`. The underlying Debian distribution is `Bookworm`. It still runs with the previous distribution (`Bullseye`) but it is not supported. _dotpi_ supports the `Lite` version of the system (minimal, without graphical interface).
+_dotpi_ systems installed on Rapsberry Pi are created on top of `Raspberry Pi OS`. Currently the underlying Debian distribution is `Bookworm`, _dotpi_ still runs with the previous distribution (`Bullseye`) but it is not supported. 
+
+Additionally, _dotpi_ supports the `Lite` version (minimal, without graphical interface) of `Raspberry Pi OS`.
 
 
