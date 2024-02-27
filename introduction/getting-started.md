@@ -170,9 +170,22 @@ INFO:
 INFO: ssh pi@dotpi-getting-started-001.local 'tail -f /opt/dotpi/var/log/dotpi_prepare_system_*.log'
 ```
 
+Once the network is ready and the ssh able to establish a connection, your system (as it's never seen this host key before) might prompt:
+
+```sh
+The authenticity of host dotpi-getting-started-001.local can not be established.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Type "yes" and enter.
+
 After a few minutes, you should see a log saying `INFO: System prepared`:
 
 ![dotpi-install-log](../assets/introduction/getting-started/dotpi-install-log.png)
+
+::: info
+The installation process requires an internet connection to the oustide world in order to install dependencies. Make sure you have an internet connection and note that installation time depends on your bandwidth.
+:::
 
 Your RPi is ready! Let's now install and launch the _dotpi-manager_
 
@@ -204,6 +217,8 @@ Make sure your computer is on the same network as the one you configured for the
 Once the server is up and running, go to <a href="http://127.0.0.1:9000" target="_blank">http://127.0.0.1:9000</a>, and Tada! you should see your RPi in the interface:
 
 ![dotpi-manager](../assets/introduction/getting-started/dotpi-manager.png)
+
+Now if you click the check-sound bang (on the right-hand side of the RPI status in your manager), you should hear a full volume short white noise coming out of the mini jack output of your RPI. 
 
 ## Conclusion
 
