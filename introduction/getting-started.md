@@ -173,8 +173,8 @@ INFO: ssh pi@dotpi-getting-started-001.local 'tail -f /opt/dotpi/var/log/dotpi_p
 Once the network is ready and the ssh able to establish a connection, your system (as it's never seen this host key before) might prompt:
 
 ```sh
-The authenticity of host dotpi-getting-started-001.local can not be established.
-Are you sure you want to continue connecting (yes/no/[fingerprint])?
+"The authenticity of host dotpi-getting-started-001.local can not be established.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?"
 ```
 
 Type "yes" and enter.
