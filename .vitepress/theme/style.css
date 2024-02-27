@@ -192,3 +192,17 @@ iframe {
   border: 1px solid #ababab;
   background-color: white;
 }
+
+a.action {
+  display: inline-block;
+  padding: 6px 20px;
+  color: var(--vp-button-brand-text);
+  background-color: var(--vp-button-brand-bg);
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+a.action:hover {
+  color: var(--vp-button-brand-hover-text);
+  background-color: var(--vp-button-brand-hover-bg);
+}

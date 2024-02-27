@@ -30,7 +30,7 @@ export default defineConfig({
       { text: 'Introduction',
         items: [
           { text: 'Getting started', link: '/introduction/getting-started.md' },
-          { text: 'Configuring a project', link: '/introduction/project-configuration.md' },
+          // { text: 'Configuring a project', link: '/introduction/project-configuration.md' },
         ]
       },
     ],

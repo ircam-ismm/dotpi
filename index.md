@@ -6,6 +6,8 @@ layout: doc
 
 The _dotpi_ ecosystem aims at facilitating the creation and maintenance of a fleet of Raspberry Pi nano-computers to run distributed audio applications.
 
+<a class="action" href="./introduction/getting-started.html">Getting Started</a>
+
 ![dots-espro](./assets/homepage/dots-espro.jpg)
 
 ## Features

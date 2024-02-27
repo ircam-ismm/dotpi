@@ -42,12 +42,7 @@ Let's first open the `getting-started/configuration/dotpi_project.bash` file to 
 dotpi_project_name='example' # [!code --]
 dotpi_project_name='getting-started' # [!code ++]
 
-# default is yes
 dotpi_ssh_allow_password_authentication='yes'
-
-# no default password:
-# - keep the one set by the imager
-# - or override in secrets/dotpi_secrets.bash
 
 dotpi_timezone='Europe/Paris'
 dotpi_keymap='fr'
@@ -71,11 +66,11 @@ First let's change the password of the RPi. Open the `getting-started/secrets/do
 
 ```sh
 #!/bin/bash
-
-# you should change this
 dotpi_password='!raspberry' # [!code --]
 dotpi_password='yoursuperpasssword'  # [!code ++]
 ```
+
+Setting the password is mandatory and the installation full fail
 
 ::: info
 Note that in this first guide, we don't configure nor use any SSH keys. In very simple settings that could be OK, but it is likely that you will soon find such functionality convenient. See [@todo](../index.md) for further information on that point.
@@ -124,7 +119,7 @@ To prepare the system image, we will simply use the [Raspberry Pi Imager](https:
 1. Insert a SD Card into your computer
 2. Launch the Raspberry Pi Imager
 3. Select the Raspberry Pi target
-4. Select the operating system, e.g. Raspberry Pi OS Lite
+4. Select the operating system, e.g. Raspberry Pi OS Lite 64bit for RPi 4 or 32bit for RPi 3
 
 You can now click on the "NEXT" button
 
@@ -136,6 +131,10 @@ Finally, click on "YES" to start the installation of the system on the SD Card
 
 ![rpi-image-3](../assets/introduction/getting-started/rpi-imager-3.png)
 By default, the Imager will automatically eject the SD Card when the installation terminates. So let's just re-plug the SC Card so that we can apply the _dotpi_ configuration on the SD Card.
+
+::: info
+Note that this behavior can be changed in the "Option" panel of the Raspberry Pi Imager settings
+:::
 
 Once re-plugged into your computer, you should see a volume called `fsboot` mounted in the "Finder"
 
@@ -164,15 +163,52 @@ Now that the SD Card is fully prepared, you can just plug it in your Raspberry P
 
 If you'd like to monitor the installation of the system, you can just run the command that the tool proposed you on the last line:
 
-```
+```sh {4}
 INFO: You can monitor the preparation of the system with the following command
 INFO: (You will have to wait until the network is ready.)
 INFO:
 INFO: ssh pi@dotpi-getting-started-001.local 'tail -f /opt/dotpi/var/log/dotpi_prepare_system_*.log'
 ```
 
+After a few minutes, you should see a log saying `INFO: System prepared`:
+
+![dotpi-install-log](../assets/introduction/getting-started/dotpi-install-log.png)
+
+Your RPi is ready! Let's now install and launch the _dotpi-manager_
+
 ## Using the `dotpi-manager`
 
+The _dotpi-manager_ is a [_soundworks_](http://soundworks.dev) application aimed at managing and controlling fleets of RPi. It is composed of:
+- a Node.js server that should run on your computer
+- a Browser client to monitor and control your fleet of devices
+- a Node.js client that runs on the RPi and that is automatically installed by the _dotpi-install_ tool.
+
+Let's first clone the manager on your computer:
+
+```sh
+git clone https://github.com/ircam-ismm/dotpi-manager
+```
+
+Then install the dependencies and launch the application:
+
+```sh
+cd path/to/dotpi-manager
+npm install
+npm run dev
+```
+
+::: tip
+Make sure your computer is on the same network as the one you configured for the RPi in the install step
+:::
+
+Once the server is up and running, go to <a href="http://127.0.0.1:9000" target="_blank">http://127.0.0.1:9000</a>, and Tada! you should see your RPi in the interface:
+
+![dotpi-manager](../assets/introduction/getting-started/dotpi-manager.png)
+
 ## Conclusion
+
+In this tutorial, you have learned how to simply prepare a Raspberry Pi using the _dotpi-install_ tool and how this tool relates to the _dotpi-manager_ application.
+
+In a following tutorial, we will see how to generate and install SSH keys for your _dotpi_ project, which will simplify to a great extent the way you can interact with your RPis
 
 
