@@ -36,7 +36,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ircam-ismm/webaudio-tutorials' }
+      { icon: 'github', link: 'https://github.com/ircam-ismm/dotpi' }
     ]
   }
 })
