@@ -70,7 +70,7 @@ dotpi_password='!raspberry' # [!code --]
 dotpi_password='yoursuperpasssword'  # [!code ++]
 ```
 
-Setting the password is mandatory and the installation full fail
+Setting the password is mandatory, the installation will fail if this is not done
 
 ::: info
 Note that in this first guide, we don't configure nor use any SSH keys. In very simple settings that could be OK, but it is likely that you will soon find such functionality convenient. See [@todo](../index.md) for further information on that point.
@@ -136,12 +136,12 @@ By default, the Imager will automatically eject the SD Card when the installatio
 Note that this behavior can be changed in the "Option" panel of the Raspberry Pi Imager settings
 :::
 
-Once re-plugged into your computer, you should see a volume called `fsboot` mounted in the "Finder"
+Once re-plugged into your computer, you should see a volume called `bootfs` mounted in the "Finder"
 
 ![finder-fsboot](../assets/introduction/getting-started/finder-fsboot.png)
 
 
-Let then go back into your "Terminal" on launch the following command to finalize the preparation of the SD Card with your _dotpi_ project configuration:
+Let then go back into your "Terminal" and launch the following command to finalize the preparation of the SD Card with your _dotpi_ project configuration:
 
 ```sh
 # go into the dotpi-install directory
