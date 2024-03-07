@@ -48,7 +48,7 @@ dotpi_timezone='Europe/Paris'
 dotpi_keymap='fr'
 
 dotpi_audio_device='HiFiBerry DAC+ ADC Pro' # [!code --]
-dotpi_audio_device='headphone' # [!code ++]
+dotpi_audio_device='Headphones' # [!code ++]
 
 # use node.js specific version
 # default is lts
