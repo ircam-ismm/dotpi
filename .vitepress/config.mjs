@@ -5,7 +5,7 @@ export default defineConfig({
   title: "dotpi",
   description: "Tutorial and receipes about the dotpi tools.",
 
-  srcExclude: ['README.md', 'TODOS.md'],
+  srcExclude: ['README.md', 'TODOS.md', 'backup'],
   base: '/dotpi/',
   // https://vitepress.vuejs.org/config/app-configs#markdown
   markdown: {

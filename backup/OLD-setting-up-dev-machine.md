@@ -76,7 +76,7 @@ dotpi_password='yoursuperpasssword'  # [!code ++]
 Setting the password is mandatory, the installation will fail if this is not done
 
 ::: info
-Note that in this first guide, we don't configure nor use any SSH keys. In very simple settings that could be OK, but it is likely that you will soon find such functionality convenient. See [@todo](../index.md) for further information on that point.
+Note that in this first guide, we don't configure nor use any SSH keys. In very simple settings that could be OK, but it is likely that you will soon find such functionality convenient. See [@todo](./index.md) for further information on that point.
 :::
 
 ### Wi-Fi configuration
@@ -126,13 +126,13 @@ To prepare the system image, we will simply use the [Raspberry Pi Imager](https:
 
 You can now click on the "NEXT" button
 
-![rpi-image-1](../assets/introduction/getting-started/rpi-imager-1.png)
+![rpi-image-1](./assets/introduction/getting-started/rpi-imager-1.png)
 On the next screen, select "NO" to not apply any customization setting, these settings will be applied from your project configuration file by the _dotpi install_
 
-![rpi-image-2](../assets/introduction/getting-started/rpi-imager-2.png)
+![rpi-image-2](./assets/introduction/getting-started/rpi-imager-2.png)
 Finally, click on "YES" to start the installation of the system on the SD Card
 
-![rpi-image-3](../assets/introduction/getting-started/rpi-imager-3.png)
+![rpi-image-3](./assets/introduction/getting-started/rpi-imager-3.png)
 By default, the Imager will automatically eject the SD Card when the installation terminates. So let's just re-plug the SC Card so that we can apply the _dotpi_ configuration on the SD Card.
 
 ::: info
@@ -141,7 +141,7 @@ Note that this behavior can be changed in the "Option" panel of the Raspberry Pi
 
 Once re-plugged into your computer, you should see a volume called `bootfs` mounted in the "Finder"
 
-![finder-fsboot](../assets/introduction/getting-started/finder-fsboot.png)
+![finder-fsboot](./assets/introduction/getting-started/finder-fsboot.png)
 
 
 Let then go back into your "Terminal" and launch the following command to finalize the preparation of the SD Card with your _dotpi_ project configuration:
@@ -156,7 +156,7 @@ cd path/to/dotpi-install
 
 The tool will ask you for an instance number, just put "1" for example.
 
-![dotpi-install-instance](../assets/introduction/getting-started/dotpi-install-instance.png)
+![dotpi-install-instance](./assets/introduction/getting-started/dotpi-install-instance.png)
 
 As you can see this number will be used to define the `hostname` of your RPi, which will stand to be really useful when you will have multiple of them running.
 
@@ -184,7 +184,7 @@ Type "yes" and enter.
 
 After a few minutes, you should see a log saying `INFO: System prepared`:
 
-![dotpi-install-log](../assets/introduction/getting-started/dotpi-install-log.png)
+![dotpi-install-log](./assets/introduction/getting-started/dotpi-install-log.png)
 
 ::: info
 The installation process requires an internet connection to the oustide world in order to install dependencies. Make sure you have an internet connection and note that installation time depends on your bandwidth.
@@ -219,7 +219,7 @@ Make sure your computer is on the same network as the one you configured for the
 
 Once the server is up and running, go to <a href="http://127.0.0.1:9000" target="_blank">http://127.0.0.1:9000</a>, and Tada! you should see your RPi in the interface:
 
-![dotpi-manager](../assets/introduction/getting-started/dotpi-manager.png)
+![dotpi-manager](./assets/introduction/getting-started/dotpi-manager.png)
 
 Now if you click the check-sound bang (on the right-hand side of the RPI status in your manager), you should hear a full volume short white noise coming out of the mini jack output of your RPI.
 
