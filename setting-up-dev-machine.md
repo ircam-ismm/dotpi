@@ -61,10 +61,11 @@ For windows, run _any_ commands within `WSL`.
 ## Installing `dotpi-tools`
 
 ```sh
-git clone https://github.com/ircam-ismm/dotpi-install
-cd dotpi-install
-npm install
-npm link
+npm install -g @dotpi/tools
 ```
 
 Now, the command `dotpi-tools`should be available in your machine.
+
+::: tip
+If you prefer to use `npx` rather tha installing the package globally, just replace `dotpi-tools` by `npx @dotpi/tools` in the remaining of these tutorials.
+:::
