@@ -1,12 +1,15 @@
-# Getting started
+# Setting up a dev machine
 
-In this first guide we will see how to use the `dotpi-install` tools to setup a Raspberry Pi, and how to monitor and control it remotely using the `dotpi-manager`
-
-## Cloning the `dotpi_install` tools
+## Installing `dotpi-tools`
 
 ```sh
 git clone https://github.com/ircam-ismm/dotpi-install
+cd dotpi-install
+npm install
+npm link
 ```
+
+Now, the command `dotpi-tools`should be available.
 
 ## Creating a project
 
@@ -21,15 +24,15 @@ If you open the project in your favorite editor, you should see the following di
 
 ```sh
 getting-started
-├── configuration           
+├── configuration
 │   └── dotpi_project.bash
-└── secrets               
-    ├── network 
-    │   └── components  
-    ├── ssh         
+└── secrets
+    ├── network
+    │   └── components
+    ├── ssh
     │   ├── id_rsa_dotpi_example
     │   └── id_rsa_dotpi_example.pub
-    └── dotpi_project.bash  
+    └── dotpi_project.bash
 ```
 
 The directory name should be quite self-explanatory, but, just in case, you should be careful to never share publicly (e.g. on github) the files located into the `secrets` directory.
@@ -58,7 +61,7 @@ dotpi_node_version='lts'
 - The `dotpi_project_name` will mainly define the hostname format of the RPis configured with the project, e.g. `dotpi-getting-started-001`
 - The `dotpi_audio_device` will configure the audio output of your RPi, setting to `headphones` will disable the HDMI audio output to keep only the default mini jack of the RPi.
 
-Now that some general information about our project are defined, let's configure some secrets of the project. 
+Now that some general information about our project are defined, let's configure some secrets of the project.
 
 ### Change the password
 
@@ -114,7 +117,7 @@ Now that we have configured all the most important points, let's prepare our SD 
 
 ## Preparing the SD Card
 
-To prepare the system image, we will simply use the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) provided by the Raspberry Pi foundation. 
+To prepare the system image, we will simply use the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) provided by the Raspberry Pi foundation.
 
 1. Insert a SD Card into your computer
 2. Launch the Raspberry Pi Imager
@@ -218,7 +221,7 @@ Once the server is up and running, go to <a href="http://127.0.0.1:9000" target=
 
 ![dotpi-manager](../assets/introduction/getting-started/dotpi-manager.png)
 
-Now if you click the check-sound bang (on the right-hand side of the RPI status in your manager), you should hear a full volume short white noise coming out of the mini jack output of your RPI. 
+Now if you click the check-sound bang (on the right-hand side of the RPI status in your manager), you should hear a full volume short white noise coming out of the mini jack output of your RPI.
 
 ## Conclusion
 

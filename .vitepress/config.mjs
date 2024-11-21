@@ -27,12 +27,11 @@ export default defineConfig({
     ],
 
     sidebar: [
-      { text: 'Introduction',
-        items: [
-          { text: 'Getting started', link: '/introduction/getting-started.md' },
-          // { text: 'Configuring a project', link: '/introduction/project-configuration.md' },
-        ]
-      },
+      { text: 'Requirements', link: '/requirements.md' },
+      { text: 'Setting up the dev machine', link: '/setting-up-dev-machine.md' },
+      { text: 'Creating a project', link: '/creating-a-project.md' },
+      { text: 'Installing a Raspberry Pi', link: '/installing-a-raspberry-pi.md' },
+      { text: 'Using the dotpi-manager', link: '/using-the-dotpi-manager.md' },
     ],
 
     socialLinks: [
