@@ -24,7 +24,7 @@ In addition to the common requirements, be sure that the following packages are 
 
 The _dotpi_ system will run inside the `Windows Subsystem for Linux`, `WSL`. It requires `Windows` version 10 or 11, and allows the run an almost complete `Linux` system within `Windows`.
 
-The first time, run a ``Windows PowerShell` as administrator, and install a `Linux` distribution.
+The first time, run a `Windows PowerShell` as administrator, and install a `Linux` distribution.
 
 ```
 PS C:\Windows\system32> wsl --install Ubuntu

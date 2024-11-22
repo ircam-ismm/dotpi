@@ -17,4 +17,4 @@ _dotpi_ runs with Raspberry Pi version 3 and 4 (and should work on version 5 but
 
 _dotpi_ systems installed on Rapsberry Pi are created on top of `Raspberry Pi OS`. Currently the underlying Debian distribution is `Bookworm`. _dotpi_ still runs with the previous distribution (`Bullseye`) but it is not supported.
 
-Additionally, _dotpi_ supports the `Lite` version (minimal, without graphical interface) of `Raspberry Pi OS`. It should work with other version but it is untested.
+Additionally, _dotpi_ supports the `Lite` version (minimal, without graphical interface) of `Raspberry Pi OS`. It should work with other versions but it is untested.
