@@ -9,7 +9,12 @@ On any host, _dotpi_ requires:
 
 ## Linux
 
-In addition to the common requirements, be sure that the following packages are installed:
+Install the common requirements:
+
+- `npm`
+- `rpi-imager`
+
+Install also the following packages:
 
 - `git`
 - `make`
@@ -47,15 +52,30 @@ Be sure to install `Node.js` _within_ `WSL`.
 ```
 PS C:\Windows\system32> wsl
 Launching Ubuntu...
-root@m3410-w11:~# apt install node
+root@m3410-w11:~# apt install npm
 ```
 
-Do _not_ install the `Raspberry Pi Imager` in WSL.
+If you get errors, read the messages.
 
-In this first guide we will see how to use the `dotpi-install` tools to setup a Raspberry Pi, and how to monitor and control it remotely using the `dotpi-manager`
+![windows-apt-get-error-fix-missing](./assets/setting-up-dev-machine/windows_apt_install_npm_error_fix_missing.png)
+
+Then, try to solve the problems (within `WSL`).
+
+```
+root@m3410-w11:~# apt-get update
+root@m3410-w11:~# apt-get update --fix-missing
+```
+
+Finally, install `npm` again (still within `WSL`).
+
+```
+root@m3410-w11:~# apt install npm
+```
+
+`Raspberry Pi Imager` is an exception: Do _not_ install it within `WSL`. (Later, do _not_ run it within `WSL`.)
 
 ::: info
-For windows, run _any_ commands within `WSL`.
+For windows, run _any_ shell command within `WSL`.
 :::
 
 ## Installing `dotpi-tools`
@@ -67,5 +87,5 @@ npm install -g @dotpi/tools
 Now, the command `dotpi-tools`should be available in your machine.
 
 ::: tip
-If you prefer to use `npx` rather tha installing the package globally, just replace `dotpi-tools` by `npx @dotpi/tools` in the remaining of these tutorials.
+If you prefer to use `npx` rather than installing the package globally, just replace `dotpi-tools` by `npx @dotpi/tools` in the remaining of these tutorials.
 :::

@@ -1,0 +1,49 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 CascadiaMono-Regular;\f1\fnil\fcharset0 CascadiaMono-Regular_Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red252\green50\blue33;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c100000\c29522\c16523;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15780\viewh14440\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li304\fi4\ri-3254\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \CocoaLigature0 \
+Err:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 linux-libc-dev arm64 6.8.0-48.48\
+  404  Not Found [IP: 2620:2d:4000:1::19 80]\
+Fetched 84.9 MB in 10s (8262 kB/s)                                             \
+
+\f1\b \cf3 E: 
+\f0\b0 \cf2 Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/l/linux/linux-libc-dev_6.8.0-48.48_arm64.deb  404  Not Found [IP: 2620:2d:4000:1::19 80]\
+
+\f1\b \cf3 E: 
+\f0\b0 \cf2 Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?\
+\
+root@m3410-w11:~# apt-get update\
+\
+Hit:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease\
+Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]\
+Get:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB\
+\
+Get:29 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Components [212 B]\
+Get:30 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Components [212 B]\
+Fetched 5155 kB in 2s (2114 kB/s)                          \
+Reading package lists... Done\
+\
+root@m3410-w11:~# apt-get update --fix-missing\
+\
+Hit:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease\
+Hit:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease\
+Hit:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease\
+Hit:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease\
+Reading package lists... Done\
+\
+root@m3410-w11:~# apt install npm\
+\
+Reading package lists... Done\
+Building dependency tree... Done\
+Reading state information... Done\
+The following additional packages will be installed:\
+  build-essential bzip2 cpp cpp-13 cpp-13-aarch64-linux-gnu cpp-aarch64-linux-gnu dpkg-dev eslint fakeroot g++ g++-13\
+\
+\
+\
+\
+}
