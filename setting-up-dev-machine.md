@@ -37,22 +37,14 @@ Launching Ubuntu...
 root@m3410-w11:~#
 ```
 
-Then, use `wsl` for _any_ command.
+Then, use `wsl` for _any_ shell command.
 
 First, install _all_ `Linux` requirements mentioned above.
 
 ```
 PS C:\Windows\system32> wsl
 Launching Ubuntu...
-root@m3410-w11:~# apt install git make curl openssl
-```
-
-Be sure to install `Node.js` _within_ `WSL`.
-
-```
-PS C:\Windows\system32> wsl
-Launching Ubuntu...
-root@m3410-w11:~# apt install npm
+root@m3410-w11:~# sudo apt install git make curl openssl
 ```
 
 If you get errors, read the messages.
@@ -62,20 +54,30 @@ If you get errors, read the messages.
 Then, try to solve the problems (within `WSL`).
 
 ```
-root@m3410-w11:~# apt-get update
-root@m3410-w11:~# apt-get update --fix-missing
+root@m3410-w11:~# sudo apt-get update
+root@m3410-w11:~# sudo apt-get update --fix-missing
 ```
 
-Finally, install `npm` again (still within `WSL`).
+Finally, install the packages again (still within `WSL`).
 
 ```
-root@m3410-w11:~# apt install npm
+root@m3410-w11:~# sudo apt install git make curl openssl
+```
+
+Be sure to install `Node.js` _within_ `WSL`.
+
+```
+PS C:\Windows\system32> wsl
+Launching Ubuntu...
+root@m3410-w11:~# sudo apt install npm
 ```
 
 `Raspberry Pi Imager` is an exception: Do _not_ install it within `WSL`. (Later, do _not_ run it within `WSL`.)
 
 ::: info
 For windows, run _any_ shell command within `WSL`.
+
+If you are not logged as `root` within `WSL`, you need to prefix commands with `sudo` to install packages.
 :::
 
 ## Installing `dotpi-tools`
