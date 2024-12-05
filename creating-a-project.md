@@ -1,5 +1,7 @@
 # Creating a project
 
+A project is shared among a fleet of Raspberry Pi. Once created, you can install a project on several Raspberry Pis.
+
 ## Project directory
 
 The first time, you need to create a directory of your projects.
@@ -38,3 +40,5 @@ It is recommended to generate and install `SSH` keys for the new project.
 Your project is then ready to be installed.
 
 ![create-project-ready](./assets/creating-a-project/dotpi-tools-create-project-ready.png)
+
+<a class="action" href="./installing-a-raspberry-pi.html">Installing a Raspberry Pi</a>
