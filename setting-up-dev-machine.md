@@ -83,8 +83,19 @@ If you are not logged as `root` within `WSL`, you need to prefix commands with `
 ## Installing `dotpi-tools`
 
 ```sh
-npm install -g @dotpi/tools
+npm install --global @dotpi/tools
 ```
+
+::: info
+Depending on your installation of `Node.js`, you may need to use `sudo` to install global packages.
+
+If you do not need it, do not use `sudo`, as it may lead to other problems.
+
+```sh
+sudo npm install --global @dotpi/tools
+```
+
+:::
 
 Now, the command `dotpi-tools`should be available in your machine.
 
