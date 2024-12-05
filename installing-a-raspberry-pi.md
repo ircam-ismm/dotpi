@@ -12,7 +12,7 @@ You can select your Raspberry Pi device.
 
 ![imager-device-rpi4](./assets/installing-a-raspberry-pi/imager-device-rpi4.png)
 
-Then select the operating system. We support the current `Raspberry Pi OS` (`Bookworm`), 64-bit.
+Then select the operating system. We support the current `Raspberry Pi OS` (`Bookworm`) Lite 64-bit.
 
 ![imager-os](./assets/installing-a-raspberry-pi/imager-os.png)
 
