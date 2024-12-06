@@ -1,4 +1,4 @@
-# Installing a Raspberry pi
+# Installing a Raspberry Pi
 
 ## Flashing the SD card
 

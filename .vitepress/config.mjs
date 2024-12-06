@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "dotpi",
-  description: "Tutorial and receipes about the dotpi tools.",
+  description: "Tutorial and recipes about the dotpi tools.",
 
   srcExclude: ['README.md', 'TODOS.md', 'backup'],
   base: '/dotpi/',
@@ -28,7 +28,7 @@ export default defineConfig({
 
     sidebar: [
       { text: 'Requirements', link: '/requirements.md' },
-      { text: 'Setting up the dev machine', link: '/setting-up-dev-machine.md' },
+      { text: 'Setting up the dev machine', link: '/setting-up-the-dev-machine.md' },
       { text: 'Creating a project', link: '/creating-a-project.md' },
       { text: 'Installing a Raspberry Pi', link: '/installing-a-raspberry-pi.md' },
       { text: 'Using the dotpi-manager', link: '/using-the-dotpi-manager.md' },
