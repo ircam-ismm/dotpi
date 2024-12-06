@@ -1,5 +1,7 @@
 # Installing a Raspberry Pi
 
+You can install a project on several Raspberry Pis.
+
 ## Flashing the SD card
 
 First, you will flash an SD card, to install the `Rapsberry Pi OS` on an SD card.

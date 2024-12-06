@@ -18,7 +18,7 @@ cd ~/Documents/dotpi-projects/
 
 ## Creating a new project
 
-In directory of the projects, create a new one.
+In a directory of projects, create a new one.
 
 ```sh
 cd ~/Documents/dotpi-projects/
