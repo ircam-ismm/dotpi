@@ -34,6 +34,10 @@ export default defineConfig({
       { text: 'Using the dotpi-manager', link: '/using-the-dotpi-manager.md' },
     ],
 
+    search: {
+      provider: 'local'
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ircam-ismm/dotpi' }
     ]
