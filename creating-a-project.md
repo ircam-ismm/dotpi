@@ -4,7 +4,7 @@ A project is shared among a fleet of Raspberry Pi. Once created, you can install
 
 ## Project directory
 
-The first time, you need to create a directory of your projects.
+The first time, you need to create a directory of your projects. This will be a collection of projects.
 
 ```sh
 mkdir -p ~/Documents/dotpi-projects
