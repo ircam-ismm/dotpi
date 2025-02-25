@@ -1,20 +1,20 @@
 # Installing a Raspberry Pi
 
-You can install a project on several Raspberry Pis.
+On this page, you'll be shown how to install a project on several Raspberry Pis. First, you will see how to install Raspberry Pi OS on an SD card. Then you will see how to install _dotpi-tools_ and your _dotpi_ project on the SD card. This will allow you to remotely monitor your fleet of Raspberry Pis thanks to the _dotpi manager_.
 
-## Flashing the SD card
+## Flashing the SD card: Installing Raspberry Pi OS
 
-First, you will flash an SD card, to install the `Rapsberry Pi OS` on an SD card.
+First, you will flash an SD card to install the `Rapsberry Pi OS`.
 
-Run `Raspberry Pi Imager`, also called `rpi-imager`.
+Run `Raspberry Pi Imager` (if you haven't done it yet, please [download the application](https://www.raspberrypi.com/software/)), also called `rpi-imager`.
 
-You can select your Raspberry Pi device.
+First, select your Raspberry Pi device.
 
 ![imager-device](./assets/installing-a-raspberry-pi/imager-device.png)
 
 ![imager-device-rpi4](./assets/installing-a-raspberry-pi/imager-device-rpi4.png)
 
-Then select the operating system. We support the current `Raspberry Pi OS` (`Bookworm`) Lite 64-bit.
+Then, select the operating system (OS). We support the current `Raspberry Pi OS` (`Bookworm`) Lite 64-bit.
 
 ![imager-os](./assets/installing-a-raspberry-pi/imager-os.png)
 
@@ -24,19 +24,19 @@ You can select the 'Lite' version to use less resources on a headless Raspberry.
 
 ![imager-os-rpios-lite](./assets/installing-a-raspberry-pi/imager-os-rpios-lite.png)
 
-Insert an SD card, and select it.
+Insert an SD card in your computer, and select it.
 
 ![imager-storage](./assets/installing-a-raspberry-pi/imager-storage.png)
 
 ![imager-storage-card](./assets/installing-a-raspberry-pi/imager-storage-card.png)
 
-Click `Next`.
+Press `Next`.
 
 ![imager-next](./assets/installing-a-raspberry-pi/imager-next.png)
 
 
 ::: info
-By default, the imager will automatically eject the SD Card when the installation terminates.This behavior can be changed in the `Option` tab of the imager settings.
+By default, the imager will automatically eject the SD Card when the installation terminates. This behavior can be changed in the `Option` tab of the imager settings.
 :::
 
 ![imager-next-settings](./assets/installing-a-raspberry-pi/imager-next-settings.png)
@@ -49,7 +49,7 @@ Any imager customisation is over-ridden by the project customization. For consis
 
 ![imager-next-customisation](./assets/installing-a-raspberry-pi/imager-next-customisation.png)
 
-Validate to continue.
+Press `yes` to continue.
 
 ![imager-next-continue](./assets/installing-a-raspberry-pi/imager-next-continue.png)
 
@@ -57,26 +57,28 @@ Wait until the end of the process.
 
 ![imager-next-successful](./assets/installing-a-raspberry-pi/imager-next-successful.png)
 
-Do _not_ remove the SD card, yet. Before, you will need to apply _dotpi_ to it. You should see a volume called `bootfs` mounted in your machine.
+Do _not_ remove the SD card yet. Before that, you will need to install _dotpi_ on it. You should see a volume called `bootfs` mounted in your machine.
 
-If the imager automatically ejected the SD Card after flashing, let's just re-plug the SC Card to apply the _dotpi_ configuration.
+If the imager automatically ejected the SD Card after flashing, just re-plug the SD Card to apply the _dotpi_ configuration.
 
-## Finalizing the SD card
+## Finalizing the SD card: Installing dotpi
 
 This step will copy the _dotpi_ installer with your project customizations to the SD card.
 
-In directory of the projects, select one to install.
+Go to the directory of the _dotpi_ projects and write the following command:
 
 ```sh
 cd ~/Documents/dotpi-projects/
 dotpi-tools --install-rpi
 ```
-
-Then, follow the wizard.
+Your terminal should look as the following:
 
 ![install-rpi](./assets/installing-a-raspberry-pi/dotpi-tools-install-rpi.png)
 
-Hit enter to accept a default option, or type a new value and validate with enter.
+Select the project you want to install and press `Enter`.
+Then, follow the wizard.
+
+Press `Enter` to accept a default option, or type a new value and validate with `Enter`.
 
 ![install-rpi-options](./assets/installing-a-raspberry-pi/dotpi-tools-install-rpi-options.png)
 
@@ -108,7 +110,7 @@ After the network is enabled on the Raspberry Pi (wired or wifi), you can monito
 
 ![install-rpi-log](./assets/installing-a-raspberry-pi/dotpi-tools-install-rpi-log.png)
 
-After a while the system of the Raspberry Pi is prepared.
+After a while, the system of the Raspberry Pi is prepared.
 
 ```log
 2024-11-20 15:17:51 INFO: System prepared.
@@ -121,4 +123,4 @@ The system reboots, this closes the connection.
 Connection to dotpi-dev-123.local closed by remote host.
 ```
 
-After the reboot, the Raspberry Pi is ready. It will connect to the wifi, and to the `dotpi-manager`.
+After the reboot, the Raspberry Pi is ready. It will connect to the WiFi, and to the `dotpi-manager`.

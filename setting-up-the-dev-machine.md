@@ -1,10 +1,12 @@
 # Setting up a dev machine
 
-For a general information, please see [Web development](https://ircam-ismm.github.io/webaudio-tutorials/first-steps/setting-up-environment.html)
+For general information, please see [Web development](https://ircam-ismm.github.io/webaudio-tutorials/first-steps/setting-up-environment.html).
 
-On any host, _dotpi_ requires:
+## On any operating system (OS)
 
-- [Node.js](https://nodejs.org/) LTS (long-term support) version
+_dotpi_ requires:
+
+- [Node.js](https://nodejs.org/fr/download) LTS (long-term support) version
 - [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 
 ## Linux
@@ -23,7 +25,12 @@ Install also the following packages:
 
 ## MacOS
 
-- install `Xcode` and the command-line tools
+Install `Xcode` and the command-line tools.
+One way of doing it is to open a terminal and write the following command:
+
+```sh
+xcode-select --install
+```
 
 ## Windows
 
@@ -93,9 +100,12 @@ If you are not logged as `root` within `WSL`, you need to prefix commands with `
 
 ## Installing `dotpi-tools`
 
+Open a terminal and write the command line:
+
 ```sh
 npm install --global @dotpi/tools
 ```
+This will write the package globally on your computer.
 
 ::: info
 Depending on your installation of `Node.js`, you may need to use `sudo` to install global packages.
