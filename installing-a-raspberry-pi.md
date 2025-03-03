@@ -4,9 +4,9 @@ On this page, you'll be shown how to install a project on several Raspberry Pis.
 
 ## Installing Raspberry Pi OS
 
-First, you will flash an SD card to install the `Rapsberry Pi OS`.
+First, you will flash an SD card to install the `Raspberry Pi OS`.
 
-Run `Raspberry Pi Imager` (if you haven't done it yet, please [download the application](https://www.raspberrypi.com/software/)), also called `rpi-imager`.
+Run `Raspberry Pi Imager`, also called `rpi-imager`. If you haven't done it yet, please [download the application](https://www.raspberrypi.com/software/). You can also read the [documentation](https://www.raspberrypi.com/documentation/computers/getting-started.html#raspberry-pi-imager).
 
 First, select your Raspberry Pi device.
 
@@ -33,7 +33,6 @@ Insert an SD card in your computer, and select it.
 Press `Next`.
 
 ![imager-next](./assets/installing-a-raspberry-pi/imager-next.png)
-
 
 ::: info
 By default, the imager will automatically eject the SD Card when the installation terminates. This behavior can be changed in the `Option` tab of the imager settings.
@@ -71,6 +70,7 @@ Go to the directory of the _dotpi_ projects and write the following command:
 cd ~/Documents/dotpi-projects/
 dotpi-tools --install-rpi
 ```
+
 Your terminal should look as the following:
 
 ![install-rpi](./assets/installing-a-raspberry-pi/dotpi-tools-install-rpi.png)
@@ -100,7 +100,6 @@ dotpi-tools --install-rpi
 The installation will continue.
 
 ![install-rpi-eject](./assets/installing-a-raspberry-pi/dotpi-tools-install-rpi-eject.png)
-
 
 At the end, you need to eject the SD card from your machine. Insert it in a Raspberry Pi and turn it on.
 

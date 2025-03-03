@@ -38,13 +38,13 @@ The _dotpi_ system will run inside the `Windows Subsystem for Linux`, `WSL`. It 
 
 The first time, run a `Windows PowerShell` as administrator.
 
-Update `WSL` :
+Update `WSL`:
 
 ```
-PS C:\Users\spamm> wsl --update
+PS C:\Users\lambert> wsl --update
 Checking for updates.
 The most recent version of Windows Subsystem for Linux is already installed.
-PS C:\Users\spamm>
+PS C:\Users\lambert>
 ```
 
 Then, install a recent `Linux` distribution. (Ubuntu 24 is known to work.)
@@ -105,6 +105,7 @@ Open a terminal and write the command line:
 ```sh
 npm install --global @dotpi/tools
 ```
+
 This will write the package globally on your computer.
 
 ::: info
