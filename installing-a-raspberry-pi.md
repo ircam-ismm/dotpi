@@ -2,7 +2,7 @@
 
 On this page, you'll be shown how to install a project on several Raspberry Pis. First, you will see how to install Raspberry Pi OS on an SD card. Then you will see how to install _dotpi-tools_ and your _dotpi_ project on the SD card. This will allow you to remotely monitor your fleet of Raspberry Pis thanks to the _dotpi manager_.
 
-## Flashing the SD card: Installing Raspberry Pi OS
+## Installing Raspberry Pi OS
 
 First, you will flash an SD card to install the `Rapsberry Pi OS`.
 
@@ -61,7 +61,7 @@ Do _not_ remove the SD card yet. Before that, you will need to install _dotpi_ o
 
 If the imager automatically ejected the SD Card after flashing, just re-plug the SD Card to apply the _dotpi_ configuration.
 
-## Finalizing the SD card: Installing dotpi
+## Installing _dotpi_ and project
 
 This step will copy the _dotpi_ installer with your project customizations to the SD card.
 
