@@ -32,6 +32,7 @@ export default defineConfig({
       { text: 'Creating a project', link: '/creating-a-project.md' },
       { text: 'Installing a Raspberry Pi', link: '/installing-a-raspberry-pi.md' },
       { text: 'Using the dotpi-manager', link: '/using-the-dotpi-manager.md' },
+      { text: 'Troubleshooting', link: '/troubleshooting.md' },
     ],
 
     search: {
