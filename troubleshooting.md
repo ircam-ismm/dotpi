@@ -14,9 +14,9 @@ The first thing to check is the internet connection if the Raspberry Pi. Without
 
 If the internet connection is established during the installation process, it may be long, but it could recover.
 
-### New major Debian version
+### New major version of Debian
 
-If a major release of Raspberry Pi OS happened recently, a things may break due to a new version of the underlying Debian OS:
+If a major release of Raspberry Pi OS happened recently, things may break due to a new version of the underlying Debian OS:
 
 - the certificates are not valid yet, due to certificates not already approved
 - the downloads may fail, because of the mirrors not already updated
@@ -24,3 +24,15 @@ If a major release of Raspberry Pi OS happened recently, a things may break due 
 - some tools may have been removed, or changed
 
 A quick solution is to use the previous version when choosing the OS in the `Raspberry Pi Imager`, which is then tagged as `Legacy`.
+
+### New major version of Raspberry Pi Imager
+
+If a major release of Raspberry Pi Imager happened recently, things may break:
+
+- handling of first boot
+- handling of customisation
+  - network
+  - hostname
+  - user and password
+
+  A quick solution is to revert to a previous version and to refrain from upgrading too soon, especially when the minor number is still `0`, ie `2.0.0`.
