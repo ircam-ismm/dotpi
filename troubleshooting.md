@@ -35,4 +35,4 @@ If a major release of Raspberry Pi Imager happened recently, things may break:
   - hostname
   - user and password
 
-  A quick solution is to revert to a previous version and to refrain from upgrading too soon, especially when the minor number is still `0`, ie `2.0.0`.
+A quick solution is to revert to a previous version and to refrain from upgrading too soon, especially when the minor number is still `0`, ie `2.0.0`.
