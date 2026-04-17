@@ -27,12 +27,28 @@ export default defineConfig({
     ],
 
     sidebar: [
-      { text: 'Requirements', link: '/requirements.md' },
-      { text: 'Setting up the dev machine', link: '/setting-up-the-dev-machine.md' },
-      { text: 'Creating a project', link: '/creating-a-project.md' },
-      { text: 'Installing a Raspberry Pi', link: '/installing-a-raspberry-pi.md' },
-      { text: 'Using the dotpi-manager', link: '/using-the-dotpi-manager.md' },
-      { text: 'Troubleshooting', link: '/troubleshooting.md' },
+      {
+        text: 'dotpi-tools',
+        items: [
+          { text: 'Requirements', link: '/dotpi-tools/requirements.md' },
+          { text: 'Setting up the dev machine', link: '/dotpi-tools/setting-up-the-dev-machine.md' },
+          { text: 'Creating a project', link: '/dotpi-tools/creating-a-project.md' },
+          { text: 'Installing a Raspberry Pi', link: '/dotpi-tools/installing-a-raspberry-pi.md' },
+          { text: 'Troubleshooting', link: '/dotpi-tools/troubleshooting.md' },
+        ],
+      },
+      {
+        text: 'dotpi-manager',
+        items: [
+          { text: 'Using the dotpi-manager', link: '/dotpi-manager/using-the-dotpi-manager.md' },
+        ]
+      },
+      {
+        text: 'dotpi-box',
+        items: [
+          { text: 'Introduction', link: '/dotpi-box/introduction.md' },
+        ]
+      },
     ],
 
     search: {

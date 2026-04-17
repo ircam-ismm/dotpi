@@ -27,18 +27,18 @@ dotpi-tools --create-project
 
 Your terminal should look like the following:
 
-![create-project](./assets/creating-a-project/dotpi-tools-create-project.png)
+![create-project](../assets/creating-a-project/dotpi-tools-create-project.png)
 
 Then, follow the wizard. It will allow you to configure systems (soundcard, WiFi, keyboard, SSH, etc.) and install some modules (dotpi-manager). Press `Enter` to accept default options, or type a new value and confirm with `Enter`.
 
-![create-project-options](./assets/creating-a-project/dotpi-tools-create-project-options.png)
+![create-project-options](../assets/creating-a-project/dotpi-tools-create-project-options.png)
 
 It is recommended to generate and install `SSH` keys for the new project.
 
-![create-project-ssh-keys](./assets/creating-a-project/dotpi-tools-create-project-ssh-keys.png)
+![create-project-ssh-keys](../assets/creating-a-project/dotpi-tools-create-project-ssh-keys.png)
 
 Your project is now ready to be installed on a Rasberry Pi.
 
-![create-project-ready](./assets/creating-a-project/dotpi-tools-create-project-ready.png)
+![create-project-ready](../assets/creating-a-project/dotpi-tools-create-project-ready.png)
 
 <a class="action" href="./installing-a-raspberry-pi.html">Installing a Raspberry Pi</a>

@@ -48,7 +48,7 @@ Make sure your computer is on the same network as the one you configured for the
 
 Once the server is up and running, go to <a href="http://127.0.0.1:9000" target="_blank">http://127.0.0.1:9000</a>, and Tada! you should see your RPi in the interface:
 
-![dotpi-manager](./assets/using-the-dotpi-manager/dotpi-manager.png)
+![dotpi-manager](../assets/using-the-dotpi-manager/dotpi-manager.png)
 
 ::: info
 Caution! it will be loud: Do _not_ plug headphones to the Raspberry Pi before the following test.
@@ -58,41 +58,41 @@ Now if you click on the check-sound bang (on the right-hand side of the RPI stat
 
 ## Using the `dotpi-manager`
 
-The controller interface is made of three main zones: 
+The controller interface is made of three main zones:
 1. Scripting zone
 2. List of your dotpi clients
-3. Console 
+3. Console
 
-![dotpi-manager-controller-interface](./assets/using-the-dotpi-manager/dotpi-manager-global.png)
+![dotpi-manager-controller-interface](../assets/using-the-dotpi-manager/dotpi-manager-global.png)
 
-On the top right of the screen, you will find usefull buttons to: 
+On the top right of the screen, you will find usefull buttons to:
 - display in full screen mode
 - restart _dotpi_ clients
 - turn off _dotpi_ clients
 
-![dotpi-manager-controller-interface](./assets/using-the-dotpi-manager/dotpi-manager-bar.png)
+![dotpi-manager-controller-interface](../assets/using-the-dotpi-manager/dotpi-manager-bar.png)
 
 ### 1. Scripting
 
-![dotpi-manager-controller-interface](./assets/using-the-dotpi-manager/dotpi-manager-scripting.png)
+![dotpi-manager-controller-interface](../assets/using-the-dotpi-manager/dotpi-manager-scripting.png)
 
 In this part of the window you can:
-- create several tabs ("pannels") corresponding to your different apps or projects. To delete a tab, press the (`X`) button at top right. 
+- create several tabs ("pannels") corresponding to your different apps or projects. To delete a tab, press the (`X`) button at top right.
 - clone a project from your local directory to your Raspberry Pi using the `Synchronize` fonctionnality: Write the path of your directory and press the `Sync` button. If the `Watch` mode is activated, the directory on your Raspberry Pi client will be automatically updated each time the source project is modified in your local directory.
 - run a command using the `bash` shell: write the command and press `Execute`. To exit a process, press again the `Execute` button.
 
 ### 2. _dotpi_ clients
 
-![dotpi-manager-controller-interface](./assets/using-the-dotpi-manager/dotpi-manager-clients.png)
+![dotpi-manager-controller-interface](../assets/using-the-dotpi-manager/dotpi-manager-clients.png)
 
-The list of all your _dotpi_ clients will appear on this part of the window. The different icons indicate if the client is (1) connected to the network, (2) connected to the Internet, (3) synchronizing directories, (4) executing a command. 
+The list of all your _dotpi_ clients will appear on this part of the window. The different icons indicate if the client is (1) connected to the network, (2) connected to the Internet, (3) synchronizing directories, (4) executing a command.
 You may as well (5) filter actions or (6) logs, and (7) play some sound (`noise` or `sweep`).
 
 ### 3. Logs
-The logs of your client(s) are displayed on this part of the window. 
+The logs of your client(s) are displayed on this part of the window.
 
-If you click on the `stderr` button (for 'standard error'), this will filter the logs to display only the errors: 
+If you click on the `stderr` button (for 'standard error'), this will filter the logs to display only the errors:
 
-![dotpi-manager-controller-interface](./assets/using-the-dotpi-manager/dotpi-manager-logs.png)
+![dotpi-manager-controller-interface](../assets/using-the-dotpi-manager/dotpi-manager-logs.png)
 
 Press the delete button (`X`) at top right to clear all logs.

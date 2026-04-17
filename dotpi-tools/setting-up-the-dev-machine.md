@@ -67,7 +67,7 @@ root@m3410-w11:~# sudo apt install git make curl openssl
 
 If you get errors, read the messages.
 
-![windows-apt-get-error-fix-missing](./assets/setting-up-dev-machine/windows_apt_install_npm_error_fix_missing.png)
+![windows-apt-get-error-fix-missing](../assets/setting-up-dev-machine/windows_apt_install_npm_error_fix_missing.png)
 
 Then, try to solve the problems (within `WSL`).
 
