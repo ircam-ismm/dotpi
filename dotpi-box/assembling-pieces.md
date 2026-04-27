@@ -1,6 +1,6 @@
 # Assembling pieces
 
-In this chapter, we will describe how to assemble and glue all the pieces together
+In this chapter, we will describe how to assemble and glue all the pieces together.
 
 ## First glueing move
 
@@ -31,7 +31,7 @@ Apply silicon seals inside the box on the highlighted parts (this will ensure sp
 
 ![silicon-join-1](../assets/dotpi-box/how-to-build-it/sillicon-join-1.png)
 
-And add the inside speaker foam:
+And glue the inside speaker foam:
 
 ![inside-speaker-foam](../assets/dotpi-box/how-to-build-it/inside-speaker-foam.png)
 
@@ -46,7 +46,7 @@ Don't forget to pass the cable through the separation hole before glueing face 1
 
 ![epoxy-glue-face-1](../assets/dotpi-box/how-to-build-it/epoxy-glue-face-1.png)
 
-Fit it with the rest of the box and apply pressure with clamps using a wooden block and face 6 on the other side to distribute the pressure:
+Fit it with the rest of the box and apply pressure with clamps using wooden blocks to distribute the pressure:
 
 :::info
 In the picture below, wooden parts have been coloured in black
@@ -57,16 +57,16 @@ In the picture below, wooden parts have been coloured in black
 
 ## Closing the box 
 
-In order to close and be able to use the box, you need to fix the 4 M4x6 het-set inserts in the separations holes provided for this purpose, apply silicon to the hole around the speaker cable (to improve cabinet tightness), and optionally fix and weld to a cable the external speaker connector
+In order to close and be able to use the box, you need to fix the 4 M4x6 het-set inserts in the separations holes provided for this purpose, apply silicon to the hole around the speaker cable (to improve cabinet tightness), and optionally fix (with 2 M2.5 screws and bolts) and weld to a cable the external speaker connector.
 
 ![heat-inserts-and-seals](../assets/dotpi-box/how-to-build-it/heat-inserts-and-seals.png)
 
 Fix the USB-C trigger board at his position with epoxy glue:
 <!-- TODO : picture of the usb-c trigger board fixed -->
 
-You can now fix the Raspberry Pi and Amp module to face 6 using M2.5 screws and M2.5 spacers. Plug the USB-C trigger boards cables to the amp power inlet, plug the to other cables to the left and right outlet of the amp and tada!
+You can now fix the Raspberry Pi and Amp module to face 6 using M2.5 screws and M2.5 spacers. Plug the USB-C trigger boards cables to the amp power inlet, plug the two other cables to the left and right outlet of the amp and tada!
 
 ![raspi-fixed](../assets/dotpi-box/how-to-build-it/raspi-fixed.png)
 
-You now have a (almost) fully functional distributed speaker! You now have to refer to the [dotpi-tools](../dotpi-tools/requirements.md) tutorials in order to install the required software on the Raspberry Pi in order to use it as a distributed musical thing.
+You now have an (almost) fully functional distributed speaker! Please refer to the [dotpi-tools](../dotpi-tools/requirements.md) tutorials in order to install the required softwares on the Raspberry Pi to use it as a distributed musical thing.
 

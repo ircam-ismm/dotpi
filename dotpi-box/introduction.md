@@ -6,13 +6,17 @@ Thanks to the [*soundworks*](https://soundworks.dev/) JavaScript framework and t
 
 ## Why
 
-From a software point of view, we therefore have access to all the required technologies to build a distributed audio system.
+From a software point of view, taking into account the tools mentioned above, we have access to all the required technologies to build a distributed audio system.
 
 Some of the benefits of such systems include portability, ease of deployment and optimization  among other things. From this point of view, it is not desirable to have all the necessary equipment broken down into many different parts which would lead into a tedious process of setting up and operating the system.
 
 This tutorial aims to guide you into building speakers adapted to distributed musical systems.
 
+## Approximate time
 
+Because it depends on how fast you and your machines are, the time needed to manufacture a box is variable. Furthermore, there are lulls in the process, such as glue drying times, 3D printing and laser cutting. 
+
+To give an idea of the scale, you should allow about 5 days in order to build 4 speakers.
 ## Related documentation an tutorials 
 
 ### *soundworks*
@@ -28,6 +32,9 @@ A powerful and versatile system for controlling audio on the Web, allowing devel
 
 - [Tutorials](https://ircam-ismm.github.io/webaudio-tutorials/) 
 - [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+
+The Web Audio API has been ported to the Node.js environment:
+
 - [node-web-audio-api GitHub](https://github.com/ircam-ismm/node-web-audio-api/)
 
 ### dotpi ecosystem
