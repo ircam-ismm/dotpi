@@ -9,8 +9,8 @@ You can download all the necessary files via [this link](../assets/dotpi-box/req
 
 Here are a list of softwares you will need in order to carry out the project
 - 3D slicer (e.g. [Bambu Studio](https://bambulab.com/fr-fr/download/studio), depending on the 3D printer you use)
-- Vector Graphics Editor (e.g [Inkscape](https://inkscape.fr/))
-- Optionally Fusion 360 if you want to edit the project (see [this step](modify-the-project.md) if that is the case)
+- Vector Graphics Editor (e.g. [Inkscape](https://inkscape.fr/))
+- Optionally Fusion 360 if you want to edit the project (see [Modify the project](modify-the-project.md) if that is the case)
 
 ## Hardware
 
@@ -33,8 +33,10 @@ You will also need this equipment (in most of the cases, aliases are ok, but mak
     - 4 M4x5
     - 4 M4x10
     - 4 M2.5x6
+    - 4 M2.5x4 screws
     - 4 M4x6 Heat Set Inserts
     - 4 M4x4 Heat set Insterts
+    - 4 M2.5x8 spacers
 - Optional external speaker connector
 - optional USB-C power bank (must be high voltage output compatible), a regular USB-C high voltage charger works as well
 
@@ -43,6 +45,7 @@ You will also need this equipment (in most of the cases, aliases are ok, but mak
 - Soldering iron (and soldering tin)
 <!-- check screwdrivers sizes -->
 - Screwdrivers (Phillips and Allen)
+- Clamps : ideally a set of two frame clamps in addition to two regular clamps
 
 ## Consumables
 

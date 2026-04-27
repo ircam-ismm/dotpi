@@ -2,6 +2,8 @@
 
 Thanks to the [*soundworks*](https://soundworks.dev/) JavaScript framework and the *dotpi-tools* developed during the DOTS research program, one can easily control a fleet of nano-computers over the network (i.e. Raspberry Pi). Powered by external power banks and equipped with amplifiers, these objects turn into distributed autonomous speakers. Moreover, thanks to the [*node-web-audio-api*](https://github.com/ircam-ismm/node-web-audio-api) these objects are able to compute and synthesize sound controlled in real-time through the network in a straightforward workflow using web technologies.
 
+![the-box](../assets/dotpi-box/introduction/the-box.png)
+
 ## Why
 
 From a software point of view, we therefore have access to all the required technologies to build a distributed audio system.
