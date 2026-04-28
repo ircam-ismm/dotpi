@@ -10,7 +10,7 @@ You can download all the necessary files via [this link](../assets/dotpi-box/req
 Here are a list of softwares you will need in order to carry out the project
 - 3D slicer (e.g. [Bambu Studio](https://bambulab.com/fr-fr/download/studio), depending on the 3D printer you use)
 - Vector Graphics Editor (e.g. [Inkscape](https://inkscape.fr/))
-- Optionally Fusion 360 if you want to edit the project (see [Modify the project](modify-the-project.md) if that is the case)
+- Optionally Fusion 360 if you want to edit the project (see [Shape your box](shape-your-box.md) if that is the case)
 
 ## Hardware
 

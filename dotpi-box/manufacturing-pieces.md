@@ -68,8 +68,8 @@ Then, we have to fix our speaker to the front face (face 1) :
 
 ![heat-inserts](../assets/dotpi-box/how-to-build-it/heat-inserts.png)
 
-- Put some thread lock inside the 4 threadings
 - Apply the speaker ring foam
+- Put some thread lock inside the 4 threadings
 - Present the speaker and tighten the M4x5 screws 
 
 ![thigthened-speaker](../assets/dotpi-box/how-to-build-it/thigthened-speaker.png)

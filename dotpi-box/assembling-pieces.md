@@ -48,12 +48,7 @@ Don't forget to pass the cable through the separation hole before glueing face 1
 
 Fit it with the rest of the box and apply pressure with clamps using wooden blocks to distribute the pressure:
 
-:::info
-In the picture below, wooden parts have been coloured in black
-:::
-
-![glueing-face-1_1](../assets/dotpi-box/how-to-build-it/glueing-face-1_1.png)
-![glueing-face-1_2](../assets/dotpi-box/how-to-build-it/glueing-face-1_2.png)
+![clamping-front-face](../assets/dotpi-box/how-to-build-it/clamping-front-face.png)
 
 ## Closing the box 
 
@@ -61,12 +56,16 @@ In order to close and be able to use the box, you need to fix the 4 M4x6 het-set
 
 ![heat-inserts-and-seals](../assets/dotpi-box/how-to-build-it/heat-inserts-and-seals.png)
 
-Fix the USB-C trigger board at his position with epoxy glue:
-<!-- TODO : picture of the usb-c trigger board fixed -->
+Fix the USB-C trigger board at his position with epoxy glue, making sure it does not stick out of the external face
 
-You can now fix the Raspberry Pi and Amp module to face 6 using M2.5 screws and M2.5 spacers. Plug the USB-C trigger boards cables to the amp power inlet, plug the two other cables to the left and right outlet of the amp and tada!
+![usb-c_trigger_board](../assets/dotpi-box/how-to-build-it/usb-c_trigger_board.png)
 
-![raspi-fixed](../assets/dotpi-box/how-to-build-it/raspi-fixed.png)
+You can now fix the Raspberry Pi and Amp module to face 6 using M2.5 screws and M2.5 spacers. Plug the USB-C trigger boards cables to the amp power inlet, plug the two other cables to the left and right outlet of the amp
+
+![cables](../assets/dotpi-box/how-to-build-it/cables.png)
+
+## Conclusion
 
 You now have an (almost) fully functional distributed speaker! Please refer to the [dotpi-tools](../dotpi-tools/requirements.md) tutorials in order to install the required softwares on the Raspberry Pi to use it as a distributed musical thing.
 
+![raspi-fixed](../assets/dotpi-box/how-to-build-it/raspi-fixed.png)

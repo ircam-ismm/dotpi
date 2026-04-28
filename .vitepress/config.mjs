@@ -49,11 +49,9 @@ export default defineConfig({
           { text: 'Introduction', link: '/dotpi-box/introduction.md' },
           { text: 'Overview', link: '/dotpi-box/overview.md' },
           { text: 'Requirements', link: '/dotpi-box/requirements.md' },
-          // { text: 'How to build it', link: '/dotpi-box/how-to-build-it.md' },
           { text: 'Manufacturing pieces', link: '/dotpi-box/manufacturing-pieces.md' },
           { text: 'Assembling pieces', link: '/dotpi-box/assembling-pieces.md' },
-          // { text: 'How to control it', link: '/dotpi-box/how-to-control-it.md' },
-          { text: 'Modify the project', link: '/dotpi-box/modify-the-project.md' },
+          { text: 'Shape your box', link: '/dotpi-box/shape-your-box.md' },
         ]
       },
     ],
