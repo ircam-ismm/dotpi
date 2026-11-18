@@ -7,13 +7,25 @@ For general information, please see [Web development](https://ircam-ismm.github.
 _dotpi_ requires:
 
 - [Node.js](https://nodejs.org/fr/download) LTS (long-term support) version
+- `npm` is part of `node.js`
+- `pnpm` must be available in path, installed via `npm --global install pnpm`
 - [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
+
+::: tip
+Depending on your installation, you may need to use the `sudo` prefix for global installation, ie. `sudo npm --global install pnpm`
+:::
+
+::: info
+For 32 bit systems, `pnpm` may not install after version 11.
+In that case, install version 11 with `npm --global install pnpm@11`
+:::
 
 ## Linux
 
 Install the common requirements:
 
 - `npm`
+- `pnpm`
 - `rpi-imager`
 
 Install also the following packages:
@@ -30,6 +42,12 @@ One way of doing it is to open a terminal and write the following command:
 
 ```sh
 xcode-select --install
+```
+
+To finalise the installation, you must accept its license. Either run Xcode or run:
+
+```sh
+sudo xcodebuild -license
 ```
 
 ## Windows
